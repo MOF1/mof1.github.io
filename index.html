@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOF1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <nav id="deskNav">
+        <a href="#about">About</a>
+        <a href="">Resources</a>
+        <a href="#fpgame">Games</a>
+        <a href="#follow">Follow</a>
+    </nav>
+
+    <nav id="mobileNav">
+        <button onclick="navHandle(false)" id="close" class="navMBtn"><i class="ri-close-fill"></i></button>
+        <button onclick="navHandle(true)" id="open" class="navMBtn"><i class="ri-menu-2-line"></i></button>
+        <a href="#about">About</a>
+        <a href="">Resources</a>
+        <a href="#fpgame">Games</a>
+        <a href="#follow">Follow</a>
+    </nav>
+    <section id="hero" class="hero">
+        <div class="imageSection">
+            <div id="imgOBJ" class="imgObj"></div>
+            <img id="lines" src="./res/lines.svg" alt="">
+            <img id="clan" src="./res/clan.svg" alt="">
+        </div>
+
+        <div class="container">
+            <img id="logo" src="./res/logo.svg" alt="">
+            <button onclick="discord()">
+                <svg width="49" height="49" viewBox="0 0 49 49" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.9836 20.5134C18.6211 20.5134 17.6371 21.7245 17.6371 23.087C17.6371 24.4495 18.6968 25.6606 19.9836 25.6606C21.3462 25.6606 22.3302 24.5252 22.3302 23.087C22.4059 21.6488 21.3462 20.5134 19.9836 20.5134Z"
+                        fill="currentColor" />
+                    <path
+                        d="M28.4614 25.585C29.7574 25.585 30.808 24.4327 30.808 23.0113C30.808 21.5899 29.7574 20.4377 28.4614 20.4377C27.1655 20.4377 26.1149 21.5899 26.1149 23.0113C26.1149 24.4327 27.1655 25.585 28.4614 25.585Z"
+                        fill="currentColor" />
+                    <path
+                        d="M39.8914 0.756958H8.5536C5.90427 0.756958 3.70911 2.87642 3.70911 5.52576V37.2421C3.70911 39.8914 5.82857 42.0109 8.47791 42.0109H35.0469L33.7601 37.7719L36.7122 40.5727L39.5886 43.222L44.5845 47.688V5.52576C44.8116 2.87642 42.5408 0.756958 39.8914 0.756958ZM30.808 31.3378C30.808 31.3378 29.9754 30.3538 29.2184 29.4455C32.3219 28.6128 33.4573 26.6447 33.4573 26.6447C32.4733 27.2503 31.565 27.7045 30.808 28.0072C29.6726 28.5371 28.4615 28.8399 27.4017 28.9913C25.1309 29.4455 23.1628 29.2941 21.3461 28.9913C19.9836 28.7642 18.9239 28.3857 17.9398 28.0072C17.4099 27.7802 16.7287 27.5531 16.1988 27.2503C16.1231 27.2503 16.1231 27.1746 15.9717 27.1746C15.9717 27.1746 15.896 27.1746 15.896 27.0989C15.4419 26.8718 15.2905 26.6447 15.2905 26.6447C15.2905 26.6447 16.5016 28.5371 19.4537 29.4455C18.6968 30.2781 17.8641 31.3378 17.8641 31.3378C12.6411 31.1108 10.7488 27.8559 10.7488 27.8559C10.7488 20.2863 14.1551 14.2307 14.1551 14.2307C17.5613 11.6571 20.7405 11.8085 20.7405 11.8085L20.9676 12.1112C16.653 13.2467 14.7606 15.1391 14.7606 15.1391C14.7606 15.1391 15.2905 14.8363 16.1231 14.5335C18.6968 13.4738 20.5891 13.171 21.4218 13.0196C21.4975 13.0196 21.6489 13.0196 21.876 13.0196C23.2385 12.7925 24.9795 12.7925 26.5691 13.0196C28.8399 13.2467 31.1865 14.0036 33.6087 15.2904C33.6087 15.2904 31.792 13.5495 27.7045 12.3383L28.0073 11.8842C28.0073 11.8842 31.1865 11.8085 34.5928 14.3064C34.5928 14.3064 37.9991 20.362 37.9991 27.9316C38.0747 27.8559 36.031 31.2621 30.808 31.3378Z"
+                        fill="currentColor" />
+                </svg>
+
+                Join Discord
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="wrapper">
+            <div class="logoContainer">
+                <img src="./res/logo2.svg" alt="">
+            </div>
+            <div class="paragraph">
+                <b>MOF1</b> is a gaming clan based in India created by AKA <b>Suren</b>. The name came from two
+                Racing championships called <b>Moto GP & Formula 1.</b> MOF1 always focuses on creating an excellent
+                environment for gamers. Want to become a member of the family? Join our discord server.
+                <br><br>
+                Always remember one thing,
+                <br>
+                <b>Failure doesn't mean the game is over, it means try again with experience.</b>
+            </div>
+        </div>
+    </section>
+
+    <section id="fpgame" class="fp">
+        <h1>Frequently <span>Played</span></h1>
+        <div class="list-of-games">
+            <img src="./res/fpgame/apex.png" alt="">
+            <img src="./res/fpgame/bgmi.png" alt="">
+            <img src="./res/fpgame/csgo.png" alt="">
+            <img src="./res/fpgame/fc2.png" alt="">
+            <img src="./res/fpgame/krunker.png" alt="">
+            <img src="./res/fpgame/valorant.png" alt="">
+        </div>
+    </section>
+
+
+
+
+    <section id="follow" class="follow">
+        <h1>Follow</h1>
+        <div class="grid">
+            <div class="card">
+                <div class="cover" style="background-image: url('./res/images/suren.png');background-position: center;">
+                </div>
+                <h4>Streaming On</h4>
+                <div class="links">
+                    <a target="blank" href="https://m.twitch.tv/mof1_suren">
+                        <i class="ri-twitch-fill"></i>
+                    </a>
+                    <a target="blank" href="https://www.youtube.com/channel/UC5vuFL_S9aFxkpwL5thM9ig">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+                <div class="cardOwner">
+                    <span>MOF1</span> Suren
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover" style="background-image: url('./res/images/theif.jpg');background-position: center;">
+                </div>
+                <h4>Streaming On</h4>
+                <div class="links">
+                    <a target="blank" href="https://m.twitch.tv/mof1thief">
+                        <i class="ri-twitch-fill"></i>
+                    </a>
+                    <a target="blank" href="https://www.youtube.com/channel/UCcYborAqPT0KNnPWRVuEiwQ">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+                <div class="cardOwner">
+                    <span>MOF1</span> ThieF
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover"
+                    style="background-image: url('./res/images/suvrojit.jpg');background-position: center;">
+                </div>
+                <h4>Streaming On</h4>
+                <div class="links">
+                    <a target="blank" href="https://m.twitch.tv/mof1_ryan">
+                        <i class="ri-twitch-fill"></i>
+                    </a>
+                    <a target="blank" href="https://www.youtube.com/channel/UCtjKHcJP8WoetijX8GbSthA/videos">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+                <div class="cardOwner">
+                    <span>MOF1</span> Ryan
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover" style="background-image: url('./res/images/epicX.png');background-position: center;">
+                </div>
+                <h4>Available On</h4>
+                <div class="links">
+                    <a target="blank" href="https://github.com/epicX67">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a target="blank" href="https://www.youtube.com/epicX">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+                <div class="cardOwner">
+                    <span>MOF1</span> epicX
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <img src="./res/footer.svg" alt="">
+        <img src="./res/logo3.svg" alt="">
+    </footer>
+</body>
+
+</html>
