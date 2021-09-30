@@ -4,7 +4,8 @@ const images = ["1.jpg", "2.jpg", "3.png", "4.jpg", "5.jpg"];
 let count = 1;
 
 //currIMG.style["backgroundImage"] = `url("./res/images/${images[count++ % 5]}")`;
-currIMG.style["animation"] = `slowSlide 10000ms linear 0ms infinite forwards`;
+if (currIMG)
+  currIMG.style["animation"] = `slowSlide 10000ms linear 0ms infinite forwards`;
 
 setInterval(() => {
   currIMG.style["animation"] = `slowSlide 10000ms linear 0ms infinite forwards`;

@@ -544,6 +544,68 @@ button:active {
   color: #2c2c2c;
 }
 
+.follow .grid .card.resource {
+  height: auto !important;
+}
+
+.follow .grid .card.resource .cover {
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.follow .grid .card.resource p {
+  margin: 1rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.follow .grid .card.resource .resourceActions {
+  padding: 0.1rem 1rem;
+  padding-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.follow .grid .card.resource .resourceActions a {
+  cursor: pointer;
+  width: 3rem !important;
+  height: 3rem !important;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border: 1px solid #36363650;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  color: #3636369a;
+  -webkit-transition: background 300ms, color 300ms;
+  transition: background 300ms, color 300ms;
+}
+
+.follow .grid .card.resource .resourceActions a:hover {
+  background: #363636be;
+  color: white;
+}
+
+.follow .grid .card.resource .resourceActions a.disabled {
+  pointer-events: none;
+}
+
+.follow .grid .card.resource .resourceActions a.disabled:hover {
+  background: white;
+  color: #363636be;
+}
+
 .fp {
   background: var(--subBg);
   display: -webkit-box;
@@ -730,5 +792,18 @@ footer img:last-child {
     display: block;
     width: 5rem;
   }
+}
+
+.inResources button,
+.inResources a {
+  color: #161b22;
+}
+
+.inResources a.disabled {
+  opacity: 0.2;
+}
+
+#deskNav.inResources {
+  background: white;
 }
 /*# sourceMappingURL=style.css.map */

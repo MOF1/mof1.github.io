@@ -427,6 +427,55 @@ button {
         font-size: 1.8rem;
       }
     }
+
+    .card.resource {
+      height: auto !important;
+      .cover {
+        filter: unset;
+      }
+
+      p {
+        margin: 1rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        opacity: 0.7;
+      }
+
+      .resourceActions {
+        padding: 0.1rem 1rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: flex-end;
+
+        a {
+          cursor: pointer;
+          width: 3rem !important;
+          height: 3rem !important;
+          display: grid;
+          place-content: center;
+          border: 1px solid #36363650;
+          border-radius: 100px;
+          font-size: 1.5rem;
+          color: #3636369a;
+          transition: background 300ms, color 300ms;
+
+          &:hover {
+            background: #363636be;
+            color: white;
+          }
+        }
+        a.disabled {
+          pointer-events: none;
+        }
+        a.disabled:hover {
+          background: white;
+          color: #363636be;
+        }
+      }
+    }
   }
 }
 
@@ -596,4 +645,19 @@ footer {
       }
     }
   }
+}
+
+.inResources {
+  button,
+  a {
+    color: #161b22;
+  }
+
+  a.disabled {
+    opacity: 0.2;
+  }
+}
+
+#deskNav.inResources {
+  background: white;
 }
